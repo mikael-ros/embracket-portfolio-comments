@@ -3,8 +3,39 @@
  * Copyright (c) 2018 GitHub Inc.
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap'); /* Import font */
+
+html, code, kbd, pre, samp {
+  font-family: Spline Sans Mono;
+}
 
 main {
+  /** Variables from my site **/
+  /* Color variables */
+  --background-color: #FFF;
+  --page-color: #FFF;
+
+  /* Static text colors */
+  --text-color--white: #FFF;
+  --text-color--white-dull: #CCC;
+  --text-color--black: #111;
+  --text-color--black-dull: #222;
+
+  /* Variable text colors */
+  --text-color: var(--text-color--black);
+  --text-color-dull: var(--text-color--black-dull);
+  --text-color-negative: var(--text-color--white);
+  --text-color-negative-dull: var(--text-color--white-dull);
+
+  --backdrop-color: 10,10,10;
+  --highlight-color: 200,200,200;
+
+  --primary: #6ba7d8;
+  --primaryRGB: 107, 167, 216;
+  --secondary: #f1826e;
+  --secondaryRGB: 241, 130, 110;
+  /** END **/
+
   --color-prettylights-syntax-comment: #768390;
   --color-prettylights-syntax-constant: #6cb6ff;
   --color-prettylights-syntax-entity: #dcbdfb;
@@ -47,16 +78,16 @@ main {
   --color-btn-selected-bg: #2d333b;
   --color-btn-primary-text: #fff;
   --color-btn-primary-bg: #00000000;
-  --color-btn-primary-border: rgb(205 217 229 / 10%);
+  --color-btn-primary-border: #00000000;
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: #46954a;
-  --color-btn-primary-hover-border: rgb(205 217 229 / 10%);
-  --color-btn-primary-selected-bg: #347d39;
+  --color-btn-primary-hover-bg: rgba(var(--primaryRGB),1);
+  --color-btn-primary-hover-border: #00000000;
+  --color-btn-primary-selected-bg: rgba(var(--primaryRGB),.8);
   --color-btn-primary-selected-shadow: 0 0 transparent;
-  --color-btn-primary-disabled-text: rgb(205 217 229 / 50%);
-  --color-btn-primary-disabled-bg: rgb(52 125 57 / 60%);
-  --color-btn-primary-disabled-border: rgb(205 217 229 / 10%);
+  --color-btn-primary-disabled-text: var(--text-color--white-dull);
+  --color-btn-primary-disabled-bg: rgba(var(--primaryRGB),.6);
+  --color-btn-primary-disabled-border: #00000000;
   --color-action-list-item-default-hover-bg: rgb(144 157 171 / 12%);
   --color-segmented-control-bg: rgb(99 110 123 / 10%);
   --color-segmented-control-button-bg: #22272e;
