@@ -46,7 +46,7 @@ main {
   --color-btn-active-border: #636e7b;
   --color-btn-selected-bg: #2d333b;
   --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #347d39;
+  --color-btn-primary-bg: #00000000;
   --color-btn-primary-border: rgb(205 217 229 / 10%);
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
