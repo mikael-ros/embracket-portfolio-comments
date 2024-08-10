@@ -10,6 +10,31 @@ html, code, kbd, pre, samp {
 }
 
 main {
+  /** Variables from my site **/
+  /* Color variables */
+  --background-color: #FFF;
+  --page-color: #FFF;
+
+  /* Static text colors */
+  --text-color--white: #FFF;
+  --text-color--white-dull: #CCC;
+  --text-color--black: #111;
+  --text-color--black-dull: #222;
+
+  /* Variable text colors */
+  --text-color: var(--text-color--black);
+  --text-color-dull: var(--text-color--black-dull);
+  --text-color-negative: var(--text-color--white);
+  --text-color-negative-dull: var(--text-color--white-dull);
+
+  --backdrop-color: 10,10,10;
+  --highlight-color: 200,200,200;
+
+  --primary: #6ba7d8;
+  --primaryRGB: 107, 167, 216;
+  --secondary: #f1826e;
+  --secondaryRGB: 241, 130, 110;
+  /** END **/
 
   --color-prettylights-syntax-comment: #768390;
   --color-prettylights-syntax-constant: #6cb6ff;
